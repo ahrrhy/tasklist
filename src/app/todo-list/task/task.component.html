@@ -1,0 +1,12 @@
+<div class="container">
+  <dl class="clearfix">
+    <dt class="float-left task-description">Task:&ensp;</dt><dd class="task-description">{{task.description}}</dd>
+    <dt class="float-left">ID:&ensp;</dt><dd>{{task.id}}</dd>
+    <dt class="float-left">Due date:&ensp;</dt><dd>{{task.dueDate}}</dd>
+    <dt class="float-left">Status:&ensp;</dt><dd>{{task.state}}</dd>
+  </dl>
+  <p class="btn-wrap">
+    <app-favorite-btn (favoriteMarked)="favoriteMarked($event)"></app-favorite-btn>
+    <app-decline-btn (declined)="declined($event)"></app-decline-btn>
+  </p>
+</div>

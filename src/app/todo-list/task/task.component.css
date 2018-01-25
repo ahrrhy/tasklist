@@ -1,0 +1,26 @@
+.container {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #aec;
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.task-description {
+  font: 600 1.2rem/1.4rem 'Open Sans';
+
+}
